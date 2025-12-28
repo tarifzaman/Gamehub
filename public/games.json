@@ -1,0 +1,203 @@
+[
+    {
+      "id": "1",
+      "title": "PlayerUnknown’s Battlegrounds (PUBG)",
+      "coverPhoto": "https://i.ibb.co/0yKpY5F/pubg.jpg",
+      "category": "FPS",
+      "downloadLink": "https://www.pubgmobile.com",
+      "description": "A battle royale shooter where survival is the ultimate goal.",
+      "ratings": "4.6",
+      "developer": "Krafton"
+    },
+    {
+      "id": "2",
+      "title": "Call of Duty: Warzone",
+      "coverPhoto": "https://i.ibb.co/9WnZ0xT/warzone.jpg",
+      "category": "FPS",
+      "downloadLink": "https://www.callofduty.com/warzone",
+      "description": "Fast-paced multiplayer shooter with intense combat.",
+      "ratings": "4.7",
+      "developer": "Activision"
+    },
+    {
+      "id": "3",
+      "title": "Valorant",
+      "coverPhoto": "https://i.ibb.co/kK0x7dR/valorant.jpg",
+      "category": "FPS",
+      "downloadLink": "https://playvalorant.com",
+      "description": "Tactical shooter with unique character abilities.",
+      "ratings": "4.8",
+      "developer": "Riot Games"
+    },
+    {
+      "id": "4",
+      "title": "GTA V",
+      "coverPhoto": "https://i.ibb.co/9NQnBfH/gta5.jpg",
+      "category": "Action",
+      "downloadLink": "https://www.rockstargames.com/gta-v",
+      "description": "Open-world action game with immersive storytelling.",
+      "ratings": "4.9",
+      "developer": "Rockstar Games"
+    },
+    {
+      "id": "5",
+      "title": "Red Dead Redemption 2",
+      "coverPhoto": "https://i.ibb.co/5RDkC4Z/rdr2.jpg",
+      "category": "Adventure",
+      "downloadLink": "https://www.rockstargames.com/reddeadredemption2",
+      "description": "Epic western adventure with emotional depth.",
+      "ratings": "4.9",
+      "developer": "Rockstar Games"
+    },
+    {
+      "id": "6",
+      "title": "Cyberpunk 2077",
+      "coverPhoto": "https://i.ibb.co/z7M8zPL/cyberpunk.jpg",
+      "category": "RPG",
+      "downloadLink": "https://www.cyberpunk.net",
+      "description": "Futuristic RPG set in Night City.",
+      "ratings": "4.3",
+      "developer": "CD Projekt Red"
+    },
+    {
+      "id": "7",
+      "title": "The Witcher 3",
+      "coverPhoto": "https://i.ibb.co/jvD4T6Z/witcher3.jpg",
+      "category": "RPG",
+      "downloadLink": "https://thewitcher.com",
+      "description": "Story-driven RPG with monster hunting.",
+      "ratings": "4.9",
+      "developer": "CD Projekt Red"
+    },
+    {
+      "id": "8",
+      "title": "Minecraft",
+      "coverPhoto": "https://i.ibb.co/ZxL0ZzQ/minecraft.jpg",
+      "category": "Sandbox",
+      "downloadLink": "https://www.minecraft.net",
+      "description": "Creative sandbox game with endless possibilities.",
+      "ratings": "4.8",
+      "developer": "Mojang"
+    },
+    {
+      "id": "9",
+      "title": "Fortnite",
+      "coverPhoto": "https://i.ibb.co/mHj8Tx0/fortnite.jpg",
+      "category": "Battle Royale",
+      "downloadLink": "https://www.epicgames.com/fortnite",
+      "description": "Colorful battle royale with building mechanics.",
+      "ratings": "4.5",
+      "developer": "Epic Games"
+    },
+    {
+      "id": "10",
+      "title": "Apex Legends",
+      "coverPhoto": "https://i.ibb.co/3z0c9bH/apex.jpg",
+      "category": "Battle Royale",
+      "downloadLink": "https://www.ea.com/games/apex-legends",
+      "description": "Hero-based battle royale shooter.",
+      "ratings": "4.6",
+      "developer": "Respawn Entertainment"
+    },
+    {
+      "id": "11",
+      "title": "FIFA 24",
+      "coverPhoto": "https://i.ibb.co/3cXzTxB/fifa24.jpg",
+      "category": "Sports",
+      "downloadLink": "https://www.ea.com/fifa",
+      "description": "Realistic football simulation.",
+      "ratings": "4.4",
+      "developer": "EA Sports"
+    },
+    {
+      "id": "12",
+      "title": "eFootball 2024",
+      "coverPhoto": "https://i.ibb.co/0hZc8wB/efootball.jpg",
+      "category": "Sports",
+      "downloadLink": "https://www.konami.com/efootball",
+      "description": "Free-to-play football experience.",
+      "ratings": "4.1",
+      "developer": "Konami"
+    },
+    {
+      "id": "13",
+      "title": "Assassin’s Creed Valhalla",
+      "coverPhoto": "https://i.ibb.co/Y8B9KcZ/acvalhalla.jpg",
+      "category": "Action RPG",
+      "downloadLink": "https://www.ubisoft.com",
+      "description": "Viking-themed open world RPG.",
+      "ratings": "4.5",
+      "developer": "Ubisoft"
+    },
+    {
+      "id": "14",
+      "title": "God of War",
+      "coverPhoto": "https://i.ibb.co/2PZz7Sk/godofwar.jpg",
+      "category": "Action",
+      "downloadLink": "https://www.playstation.com",
+      "description": "Mythological action adventure.",
+      "ratings": "4.9",
+      "developer": "Santa Monica Studio"
+    },
+    {
+      "id": "15",
+      "title": "Elden Ring",
+      "coverPhoto": "https://i.ibb.co/Z6f0W4k/eldenring.jpg",
+      "category": "RPG",
+      "downloadLink": "https://en.bandainamcoent.eu",
+      "description": "Challenging open-world soulslike.",
+      "ratings": "4.9",
+      "developer": "FromSoftware"
+    },
+    {
+      "id": "16",
+      "title": "Clash of Clans",
+      "coverPhoto": "https://i.ibb.co/8Y0yWkX/coc.jpg",
+      "category": "Strategy",
+      "downloadLink": "https://supercell.com",
+      "description": "Build and defend your village.",
+      "ratings": "4.5",
+      "developer": "Supercell"
+    },
+    {
+      "id": "17",
+      "title": "League of Legends",
+      "coverPhoto": "https://i.ibb.co/5r3yLZy/lol.jpg",
+      "category": "MOBA",
+      "downloadLink": "https://www.leagueoflegends.com",
+      "description": "Competitive multiplayer online battle arena.",
+      "ratings": "4.7",
+      "developer": "Riot Games"
+    },
+    {
+      "id": "18",
+      "title": "Dota 2",
+      "coverPhoto": "https://i.ibb.co/jgZp9Lj/dota2.jpg",
+      "category": "MOBA",
+      "downloadLink": "https://www.dota2.com",
+      "description": "Strategic MOBA with deep mechanics.",
+      "ratings": "4.6",
+      "developer": "Valve"
+    },
+    {
+      "id": "19",
+      "title": "Among Us",
+      "coverPhoto": "https://i.ibb.co/4YH6F2B/amongus.jpg",
+      "category": "Party",
+      "downloadLink": "https://www.innersloth.com",
+      "description": "Social deduction multiplayer game.",
+      "ratings": "4.3",
+      "developer": "Innersloth"
+    },
+    {
+      "id": "20",
+      "title": "Need for Speed Heat",
+      "coverPhoto": "https://i.ibb.co/3dXwY8y/nfsheat.jpg",
+      "category": "Racing",
+      "downloadLink": "https://www.ea.com/games/need-for-speed",
+      "description": "High-speed street racing action.",
+      "ratings": "4.4",
+      "developer": "EA"
+    }
+  ]
+  
