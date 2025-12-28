@@ -2,7 +2,7 @@
     {
       "id": "1",
       "title": "PlayerUnknown’s Battlegrounds (PUBG)",
-      "coverPhoto": "https://i.ibb.co/0yKpY5F/pubg.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800",
       "category": "FPS",
       "downloadLink": "https://www.pubgmobile.com",
       "description": "A battle royale shooter where survival is the ultimate goal.",
@@ -12,7 +12,7 @@
     {
       "id": "2",
       "title": "Call of Duty: Warzone",
-      "coverPhoto": "https://i.ibb.co/9WnZ0xT/warzone.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1614011751997-486940dd0b60?q=80&w=800",
       "category": "FPS",
       "downloadLink": "https://www.callofduty.com/warzone",
       "description": "Fast-paced multiplayer shooter with intense combat.",
@@ -22,7 +22,7 @@
     {
       "id": "3",
       "title": "Valorant",
-      "coverPhoto": "https://i.ibb.co/kK0x7dR/valorant.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1624138784614-87fd1b6528f2?q=80&w=800",
       "category": "FPS",
       "downloadLink": "https://playvalorant.com",
       "description": "Tactical shooter with unique character abilities.",
@@ -32,7 +32,7 @@
     {
       "id": "4",
       "title": "GTA V",
-      "coverPhoto": "https://i.ibb.co/9NQnBfH/gta5.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=800",
       "category": "Action",
       "downloadLink": "https://www.rockstargames.com/gta-v",
       "description": "Open-world action game with immersive storytelling.",
@@ -42,7 +42,7 @@
     {
       "id": "5",
       "title": "Red Dead Redemption 2",
-      "coverPhoto": "https://i.ibb.co/5RDkC4Z/rdr2.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800",
       "category": "Adventure",
       "downloadLink": "https://www.rockstargames.com/reddeadredemption2",
       "description": "Epic western adventure with emotional depth.",
@@ -52,7 +52,7 @@
     {
       "id": "6",
       "title": "Cyberpunk 2077",
-      "coverPhoto": "https://i.ibb.co/z7M8zPL/cyberpunk.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1605898960764-7bc609362793?q=80&w=800",
       "category": "RPG",
       "downloadLink": "https://www.cyberpunk.net",
       "description": "Futuristic RPG set in Night City.",
@@ -62,7 +62,7 @@
     {
       "id": "7",
       "title": "The Witcher 3",
-      "coverPhoto": "https://i.ibb.co/jvD4T6Z/witcher3.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=800",
       "category": "RPG",
       "downloadLink": "https://thewitcher.com",
       "description": "Story-driven RPG with monster hunting.",
@@ -72,7 +72,7 @@
     {
       "id": "8",
       "title": "Minecraft",
-      "coverPhoto": "https://i.ibb.co/ZxL0ZzQ/minecraft.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1607988523713-7e0e6e72921c?q=80&w=800",
       "category": "Sandbox",
       "downloadLink": "https://www.minecraft.net",
       "description": "Creative sandbox game with endless possibilities.",
@@ -82,7 +82,7 @@
     {
       "id": "9",
       "title": "Fortnite",
-      "coverPhoto": "https://i.ibb.co/mHj8Tx0/fortnite.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1589241062272-c0a000072dfa?q=80&w=800",
       "category": "Battle Royale",
       "downloadLink": "https://www.epicgames.com/fortnite",
       "description": "Colorful battle royale with building mechanics.",
@@ -92,7 +92,7 @@
     {
       "id": "10",
       "title": "Apex Legends",
-      "coverPhoto": "https://i.ibb.co/3z0c9bH/apex.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?q=80&w=800",
       "category": "Battle Royale",
       "downloadLink": "https://www.ea.com/games/apex-legends",
       "description": "Hero-based battle royale shooter.",
@@ -102,7 +102,7 @@
     {
       "id": "11",
       "title": "FIFA 24",
-      "coverPhoto": "https://i.ibb.co/3cXzTxB/fifa24.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1431324155629-1a6eda1dc231?q=80&w=800",
       "category": "Sports",
       "downloadLink": "https://www.ea.com/fifa",
       "description": "Realistic football simulation.",
@@ -112,7 +112,7 @@
     {
       "id": "12",
       "title": "eFootball 2024",
-      "coverPhoto": "https://i.ibb.co/0hZc8wB/efootball.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800",
       "category": "Sports",
       "downloadLink": "https://www.konami.com/efootball",
       "description": "Free-to-play football experience.",
@@ -122,7 +122,7 @@
     {
       "id": "13",
       "title": "Assassin’s Creed Valhalla",
-      "coverPhoto": "https://i.ibb.co/Y8B9KcZ/acvalhalla.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?q=80&w=800",
       "category": "Action RPG",
       "downloadLink": "https://www.ubisoft.com",
       "description": "Viking-themed open world RPG.",
@@ -132,7 +132,7 @@
     {
       "id": "14",
       "title": "God of War",
-      "coverPhoto": "https://i.ibb.co/2PZz7Sk/godofwar.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1548611635-b6e78bb0d502?q=80&w=800",
       "category": "Action",
       "downloadLink": "https://www.playstation.com",
       "description": "Mythological action adventure.",
@@ -142,7 +142,7 @@
     {
       "id": "15",
       "title": "Elden Ring",
-      "coverPhoto": "https://i.ibb.co/Z6f0W4k/eldenring.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1614850523296-e8c1d4766044?q=80&w=800",
       "category": "RPG",
       "downloadLink": "https://en.bandainamcoent.eu",
       "description": "Challenging open-world soulslike.",
@@ -152,7 +152,7 @@
     {
       "id": "16",
       "title": "Clash of Clans",
-      "coverPhoto": "https://i.ibb.co/8Y0yWkX/coc.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800",
       "category": "Strategy",
       "downloadLink": "https://supercell.com",
       "description": "Build and defend your village.",
@@ -162,7 +162,7 @@
     {
       "id": "17",
       "title": "League of Legends",
-      "coverPhoto": "https://i.ibb.co/5r3yLZy/lol.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=800",
       "category": "MOBA",
       "downloadLink": "https://www.leagueoflegends.com",
       "description": "Competitive multiplayer online battle arena.",
@@ -172,7 +172,7 @@
     {
       "id": "18",
       "title": "Dota 2",
-      "coverPhoto": "https://i.ibb.co/jgZp9Lj/dota2.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=800",
       "category": "MOBA",
       "downloadLink": "https://www.dota2.com",
       "description": "Strategic MOBA with deep mechanics.",
@@ -182,7 +182,7 @@
     {
       "id": "19",
       "title": "Among Us",
-      "coverPhoto": "https://i.ibb.co/4YH6F2B/amongus.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1609101736413-a4428054c25f?q=80&w=800",
       "category": "Party",
       "downloadLink": "https://www.innersloth.com",
       "description": "Social deduction multiplayer game.",
@@ -192,7 +192,7 @@
     {
       "id": "20",
       "title": "Need for Speed Heat",
-      "coverPhoto": "https://i.ibb.co/3dXwY8y/nfsheat.jpg",
+      "coverPhoto": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=800",
       "category": "Racing",
       "downloadLink": "https://www.ea.com/games/need-for-speed",
       "description": "High-speed street racing action.",
@@ -200,4 +200,3 @@
       "developer": "EA"
     }
   ]
-  
