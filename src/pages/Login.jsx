@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
-import { Mail, Lock, LogIn } from "lucide-react"; // icons
+import { Mail, Lock, LogIn } from "lucide-react";
 
 const Login = () => {
   const { loginUser, googleLogin } = useContext(AuthContext);
@@ -13,10 +13,10 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    setError(""); 
+    setError("");
     loginUser(email, password)
       .then(() => navigate("/"))
-      .catch((err) => setError("Invalid email or password. Please try again."));
+      .catch(() => setError("Invalid email or password."));
   };
 
   const handleGoogleLogin = () => {
@@ -26,101 +26,34 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-teal-100 via-teal-300 to-cyan-200 px-4 py-12">
-      
-      {/* Background Decorations (Same as Register) */}
-      <div className="absolute top-20 left-20 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-      <div className="absolute bottom-20 right-20 w-64 h-64 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-
-      {/* Main Card */}
-      <div className="relative w-full max-w-md bg-white/80 backdrop-blur-lg shadow-2xl rounded-3xl p-8 md:p-10 border border-white/20">
-        
-        {/* Header */}
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-teal-100 to-cyan-100 px-4">
+      <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl p-8 border border-white/20">
         <div className="text-center mb-8">
-          <div className="bg-teal-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <LogIn className="text-teal-600 w-8 h-8" />
-          </div>
-          <h2 className="text-3xl font-extrabold text-teal-800 tracking-tight italic uppercase">
-            Welcome Back
-          </h2>
-          <p className="text-teal-600/70 mt-2 text-sm font-medium">
-            Enter your credentials to access GameHub
-          </p>
+          <div className="bg-teal-100 w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 text-teal-600"><LogIn /></div>
+          <h2 className="text-3xl font-black text-teal-800 italic uppercase">Welcome Back</h2>
         </div>
 
-        {/* Error Alert */}
-        {error && (
-          <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-6 rounded-r-xl animate-pulse">
-            <p className="text-red-700 text-xs font-bold">{error}</p>
-          </div>
-        )}
+        {error && <p className="text-red-500 text-xs font-bold bg-red-50 p-3 rounded-lg mb-4">{error}</p>}
 
-        {/* Form */}
-        <form onSubmit={handleLogin} className="space-y-5">
-          {/* Email */}
-          <div className="relative group">
-            <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-teal-500 w-5 h-5 transition-colors group-focus-within:text-teal-700" />
-            <input
-              type="email"
-              placeholder="Email address"
-              className="w-full pl-10 pr-4 py-3 bg-white/50 border border-teal-200 rounded-xl focus:ring-2 focus:ring-teal-400 focus:border-transparent outline-none transition-all placeholder:text-teal-300"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
+        <form onSubmit={handleLogin} className="space-y-4">
+          <div className="relative">
+            <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-teal-500 w-5 h-5" />
+            <input type="email" placeholder="Email" className="w-full pl-10 pr-4 py-3 border border-teal-100 rounded-xl outline-none focus:ring-2 focus:ring-teal-400" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
-
-          {/* Password */}
-          <div className="relative group">
-            <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-teal-500 w-5 h-5 transition-colors group-focus-within:text-teal-700" />
-            <input
-              type="password"
-              placeholder="Password"
-              className="w-full pl-10 pr-4 py-3 bg-white/50 border border-teal-200 rounded-xl focus:ring-2 focus:ring-teal-400 focus:border-transparent outline-none transition-all placeholder:text-teal-300"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
+          <div className="relative">
+            <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-teal-500 w-5 h-5" />
+            <input type="password" placeholder="Password" className="w-full pl-10 pr-4 py-3 border border-teal-100 rounded-xl outline-none focus:ring-2 focus:ring-teal-400" value={password} onChange={(e) => setPassword(e.target.value)} required />
           </div>
-
-          <div className="text-right">
-            <a href="#" className="text-xs text-teal-700 font-bold hover:underline">
-              Forgot password?
-            </a>
-          </div>
-
-          {/* Login Button */}
-          <button type="submit" className="w-full bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-teal-200 transition-all hover:-translate-y-1 active:scale-[0.98]">
-            Login to Account
-          </button>
+          <button type="submit" className="w-full bg-teal-500 text-white font-bold py-3.5 rounded-xl shadow-lg hover:bg-teal-600 transition">Login</button>
         </form>
 
-        {/* Divider */}
-        <div className="relative my-8">
-          <div className="absolute inset-0 flex items-center">
-            <span className="w-full border-t border-teal-100"></span>
-          </div>
-          <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-white/0 px-2 text-teal-500 font-bold">OR LOGIN WITH</span>
-          </div>
-        </div>
+        <div className="divider my-6 text-xs text-gray-400 font-bold">OR</div>
 
-        {/* Social Login */}
-        <button 
-          onClick={handleGoogleLogin} 
-          className="w-full flex items-center justify-center gap-3 bg-white border border-teal-100 py-3 rounded-xl shadow-sm hover:bg-teal-50 transition-all font-semibold text-gray-700 active:scale-95"
-        >
-          <FcGoogle className="text-2xl" />
-          Continue with Google
+        <button onClick={handleGoogleLogin} className="w-full flex items-center justify-center gap-3 border border-teal-100 py-3 rounded-xl hover:bg-teal-50 transition font-bold">
+          <FcGoogle size={20}/> Google Login
         </button>
 
-        {/* Footer Link */}
-        <p className="mt-8 text-center text-sm text-gray-600">
-          Don't have an account?{" "}
-          <Link to="/register" className="text-teal-700 font-extrabold hover:text-teal-500 transition-colors hover:underline">
-            Register Now
-          </Link>
-        </p>
+        <p className="mt-8 text-center text-sm">New here? <Link to="/register" className="text-teal-700 font-black hover:underline">Register Now</Link></p>
       </div>
     </div>
   );
