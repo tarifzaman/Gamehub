@@ -1,16 +1,21 @@
 import { ArrowLeft, Download, CheckCircle } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react"; // useContext যোগ করা হয়েছে
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate, useParams } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider"; // AuthContext ইমপোর্ট করুন
 
 const GameDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { user } = useContext(AuthContext); // ইউজার ডাটা নিন
   const [game, setGame] = useState(null);
   const [loading, setLoading] = useState(true);
   
   // বাটনের স্টেট: 'idle', 'downloading', 'downloaded'
   const [downloadStatus, setDownloadStatus] = useState("idle");
+
+  // ইউজার অনুযায়ী ডাইনামিক কি (Key)
+  const userWishlistKey = user?.email ? `wishlist-${user.email}` : null;
 
   useEffect(() => {
     fetch("/games.json")
@@ -19,12 +24,14 @@ const GameDetails = () => {
         const foundGame = data.find((g) => String(g.id) === String(id));
         setGame(foundGame);
         
-        // --- রিফ্রেশ দিলেও স্টেট ধরে রাখার লজিক ---
-        const existingWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-        const isAlreadyExist = existingWishlist.find((item) => String(item.id) === String(id));
-        
-        if (isAlreadyExist) {
-          setDownloadStatus("downloaded"); // অলরেডি থাকলে বাটনটি 'Downloaded' দেখাবে
+        // --- রিফ্রেশ দিলেও স্টেট ধরে রাখার লজিক (User Specific) ---
+        if (userWishlistKey) {
+          const existingWishlist = JSON.parse(localStorage.getItem(userWishlistKey)) || [];
+          const isAlreadyExist = existingWishlist.find((item) => String(item.id) === String(id));
+          
+          if (isAlreadyExist) {
+            setDownloadStatus("downloaded");
+          }
         }
         // -------------------------------------------
 
@@ -34,21 +41,26 @@ const GameDetails = () => {
         console.error("Fetch Error:", err);
         setLoading(false);
       });
-  }, [id]);
+  }, [id, userWishlistKey]);
 
   const handleDownloadAndWishlist = () => {
     if (downloadStatus === "downloaded") return;
+    if (!user) {
+      toast.error("Please login to download games!");
+      return;
+    }
 
     setDownloadStatus("downloading");
     toast.loading("Starting Download...", { id: "download-toast" });
 
     setTimeout(() => {
-      const existingWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+      // ইউজার স্পেসিফিক কি দিয়ে ডাটা সেভ করা হচ্ছে
+      const existingWishlist = JSON.parse(localStorage.getItem(userWishlistKey)) || [];
       const isAlreadyExist = existingWishlist.find((item) => String(item.id) === String(game.id));
 
       if (!isAlreadyExist) {
         const newWishlist = [...existingWishlist, game];
-        localStorage.setItem("wishlist", JSON.stringify(newWishlist));
+        localStorage.setItem(userWishlistKey, JSON.stringify(newWishlist));
       }
 
       setDownloadStatus("downloaded");
@@ -96,6 +108,10 @@ const GameDetails = () => {
             </div>
 
             <div className="w-full lg:w-7/12 flex flex-col justify-center">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="bg-teal-100 text-teal-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">{game.category}</span>
+                <span className="bg-amber-100 text-amber-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Rating: {game.ratings}</span>
+              </div>
               <h1 className="text-5xl font-black text-teal-950 uppercase italic mb-6 leading-none tracking-tighter">
                 {game.title}
               </h1>

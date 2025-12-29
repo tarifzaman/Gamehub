@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import MyProfile from "./pages/Myprofile";
 import GameDetails from "./pages/GameDetails";
 import Wishlist from "./pages/Wishlist";
+import UpdateProfile from "./pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       {path:"/my-profile", element:<MyProfile />},
       {path:"/game/:id", element:<GameDetails />},
       { path: "/wishlist", element: <Wishlist /> },
+      { path: "/settings", element: <UpdateProfile/> },
     ],
   },
 ]);
