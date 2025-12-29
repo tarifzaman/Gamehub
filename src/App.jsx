@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
-import MyProfile from "./pages/Myprofile";
+import MyProfile from "./pages/MyProfile";
 import GameDetails from "./pages/GameDetails";
 import Wishlist from "./pages/Wishlist";
 import UpdateProfile from "./pages/UpdateProfile";
